@@ -7,7 +7,6 @@ To download the necessary data, please run the following command:
 
 ```bash
 # installs necessary requirements and downloads necessary data
-# note: this may take anywhere from 10-20 minutes
 sh setup.sh
 ```
 
