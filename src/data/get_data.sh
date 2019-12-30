@@ -23,4 +23,18 @@ wget -P data/raw/ https://s3.amazonaws.com/drivendata/data/7/public/0bf8bc6e-30d
 wget -P data/raw/ https://s3.amazonaws.com/drivendata/data/7/public/4910797b-ee55-40a7-8668-10efd5c1b960.csv
 
 
+
+#rename the files that have now been downloaded:
+
+#rename the test set:
+mv -iv data/raw/702ddfc5-68cd-4d1d-a0de-f5f566f76d91.csv data/raw/test_set.csv
+
+#rename the training values labels
+mv -iv data/raw/0bf8bc6e-30d0-4c50-956a-603fc693d966.csv data/raw/train_set_labels.csv
+
+#rename the training set values
+mv -iv data/raw/4910797b-ee55-40a7-8668-10efd5c1b960.csv data/raw/train_set_values.csv
+
+
+
 echo "Finished downloading data and documentation"
