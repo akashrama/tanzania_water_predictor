@@ -26,24 +26,27 @@ wget -P data/raw/ https://s3.amazonaws.com/drivendata/data/7/public/0bf8bc6e-30d
 # download the independent variables for the training set (training set predictors)
 wget -P data/raw/ https://s3.amazonaws.com/drivendata/data/7/public/4910797b-ee55-40a7-8668-10efd5c1b960.csv
 
-#downlaod the Tanzania Country Geographic Data
+#download the Tanzania Country Geographic Data
 wget -P data/raw/geographic/ https://data.humdata.org/dataset/451bdd28-d06d-46ea-91c0-2e081f884395/resource/b3d5fbd6-d5d9-47f6-9d23-f1b0bf25448a/download/tza_admbnda_adm0_20181019.zip
 
-#downlaod the Tanzania Region Geographic Data
+#download the Tanzania Region Geographic Data
 wget -P data/raw/geographic/ https://data.humdata.org/dataset/451bdd28-d06d-46ea-91c0-2e081f884395/resource/55e9e1d3-6585-4e38-ae35-726875c1e8ed/download/tza_admbnda_adm1_20181019.zip
 
-# downlaod the Tanzania District Geographic Data
+# download the Tanzania District Geographic Data
 wget -P data/raw/geographic/ https://data.humdata.org/dataset/451bdd28-d06d-46ea-91c0-2e081f884395/resource/50fec0b7-ba83-43fb-bb1c-941e2dbc7a95/download/tza_admbnda_adm2_20181019.zip
 
-# downlaod the Tanzania Ward Geographic Data
+# download the Tanzania Ward Geographic Data
 wget -P data/raw/geographic/ https://data.humdata.org/dataset/451bdd28-d06d-46ea-91c0-2e081f884395/resource/930fb85d-f508-4e56-a7d6-0da021364861/download/tza_admbnda_adm3_20181019.zip
 
+# download the Tanzania Population Density Raster Data
+wget -P data/raw/geographic/ https://energydata.info/dataset/3979f68c-ccbd-4c88-8cdf-4897fda76a6b/resource/7fbd6649-fa93-43f9-bf8b-72c2e1450e69/download/tza-poptzapopmap15adjv2b.zip
 
 # unpack the .zip files and place contents back into data/raw/ directory
 unzip data/raw/geographic/tza_admbnda_adm0_20181019.zip -d data/raw/geographic
 unzip data/raw/geographic/tza_admbnda_adm1_20181019.zip -d data/raw/geographic
 unzip data/raw/geographic/tza_admbnda_adm2_20181019.zip -d data/raw/geographic
 unzip data/raw/geographic/tza_admbnda_adm3_20181019.zip -d data/raw/geographic
+unzip data/raw/geographic/tza-poptzapopmap15adjv2b.zip -d data/raw/geographic
 
 #rename the csv files:
 mv -iv data/raw/0bf8bc6e-30d0-4c50-956a-603fc693d966.csv data/raw/train_set_labels.csv
