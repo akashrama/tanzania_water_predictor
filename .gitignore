@@ -20,6 +20,9 @@
 *.shp.iso.xml  
 *.shp.xml  
 *.shx
+*.sbn
+*.sbx
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

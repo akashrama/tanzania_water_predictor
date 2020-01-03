@@ -1,14 +1,5 @@
 Start downloading data and documentation
 Finished downloading data and documentation
 Start downloading data and documentation
-Finished downloading data and documentation
-Start downloading data and documentation
-data/raw/702ddfc5-68cd-4d1d-a0de-f5f566f76d91.csv -> data/raw/test_set.csv
-data/raw/0bf8bc6e-30d0-4c50-956a-603fc693d966.csv -> data/rawtrain_set_labels.csv
-data/raw/4910797b-ee55-40a7-8668-10efd5c1b960.csv -> data/raw/train_set_values.csv
-Finished downloading data and documentation
-Start downloading data and documentation
-data/raw/702ddfc5-68cd-4d1d-a0de-f5f566f76d91.csv -> data/raw/test_set.csv
-data/raw/0bf8bc6e-30d0-4c50-956a-603fc693d966.csv -> data/raw/train_set_labels.csv
-data/raw/4910797b-ee55-40a7-8668-10efd5c1b960.csv -> data/raw/train_set_values.csv
+
 Finished downloading data and documentation
