@@ -3,3 +3,15 @@ Finished downloading data and documentation
 Start downloading data and documentation
 
 Finished downloading data and documentation
+Start downloading data and documentation
+Archive:  data/raw/geographic/tza_admbnda_adm0_20181019.zip
+Archive:  data/raw/geographic/tza_admbnda_adm1_20181019.zip
+Archive:  data/raw/geographic/tza_admbnda_adm2_20181019.zip
+Archive:  data/raw/geographic/tza_admbnda_adm3_20181019.zip
+  inflating: data/raw/geographic/tza_admbnda_adm3_20181019.shp  
+  inflating: data/raw/geographic/tza_admbnda_adm3_20181019.shx  
+Archive:  data/raw/geographic/tza-poptzapopmap15adjv2b.zip
+  inflating: data/raw/geographic/TZA_popmap15adj_v2b.tif.aux.xml  
+  inflating: data/raw/geographic/TZA_popmap15adj_v2b.tfw  
+  inflating: data/raw/geographic/TZA_popmap15adj_v2b.tif  
+Finished downloading data and documentation
