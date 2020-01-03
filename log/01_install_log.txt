@@ -6,13 +6,4 @@ Start installing necessary packages
 Finished installing necessary packages
 Start installing necessary packages
 Finished installing necessary packages
-Start installing necessary packages
-Finished installing necessary packages
-Start installing necessary packages
-Finished installing necessary packages
-Start installing necessary packages
-Finished installing necessary packages
-Start installing necessary packages
-Finished installing necessary packages
-Start installing necessary packages
-Finished installing necessary packages
+
