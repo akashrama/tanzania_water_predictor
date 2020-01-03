@@ -1,3 +1,13 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import OneHotEncoder
+
+import seaborn as sns
+import geopandas as gpd
+from shapely.geometry import Point, Polygon
+import matplotlib.pyplot as plt
+import descartes
+
 def import_pump_data():
     #import training data 
     df_train = pd.read_csv('../../../data/raw/train_set_values.csv')
@@ -130,7 +140,7 @@ def fill_nans(df):
     df['num_private'].loc[df['num_private']>0]=1
      
     #remove impossible values from gps_height
-    df_train['gps_height'].loc[df_train['gps_height']<0]=0
+    df['gps_height'].loc[df['gps_height']<0]=0
 
     return df
 
@@ -164,14 +174,25 @@ def encode_data(df):
     """
     Use pd.getdummies to onehot encode categorical data. Returns two dataframes : dummy_df and target. 
     """
-    target = df.status_group
-    df_train = df.drop('status_group', axis=1)
+    if 'status_group' in df.columns:
+        target = df.status_group
+        df = df.drop('status_group', axis=1)
 
-    cat_feats = ['funder','installer', 'num_private',
-           'region','public_meeting', 'scheme_management', 'permit',
-           'construction_year', 'extraction_type_class', 'management',
-           'payment_type', 'quality_group', 'quantity_group', 'source_class',
-           'waterpoint_type_group', 'basin']
+        cat_feats = ['funder','installer', 'num_private',
+            'region','public_meeting', 'scheme_management', 'permit',
+            'construction_year', 'extraction_type_class', 'management',
+            'payment_type', 'quality_group', 'quantity_group', 'source_class',
+            'waterpoint_type_group', 'basin']
 
-    dum_df = pd.get_dummies(df, columns = cat_feats)
-    return dum_df, target
+        dum_df = pd.get_dummies(df, columns = cat_feats)
+        return dum_df, target
+
+    else:
+        cat_feats = ['funder','installer', 'num_private',
+            'region','public_meeting', 'scheme_management', 'permit',
+            'construction_year', 'extraction_type_class', 'management',
+            'payment_type', 'quality_group', 'quantity_group', 'source_class',
+            'waterpoint_type_group', 'basin']
+
+        dum_df = pd.get_dummies(df, columns = cat_feats)
+        return dum_df
