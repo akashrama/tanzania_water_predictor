@@ -10,6 +10,11 @@
 *.zip
 *.tar.gz
 *csv.gz
+*.tif
+*.tfw
+*.1
+*.xml
+
 
 # Shapefiles
 *.cpg  
@@ -20,6 +25,9 @@
 *.shp.iso.xml  
 *.shp.xml  
 *.shx
+*.sbn
+*.sbx
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

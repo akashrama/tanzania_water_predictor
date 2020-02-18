@@ -1,6 +1,13 @@
 # tanzania_water_predictor
 Classification model predicting the function of water pumps throughout Tanzania
 
+# Notebooks
+
+To explore my work, please see the /notebooks/exploratory directory where you will find one notebook for the data cleaning and egineering process, and one notebook for each ML algoritim I implmented. 
+
+# Project Replication
+If you wish to recreate my results, clone this repo and follow the following steps:
+
 ## Setup Instructions
 
 To download the necessary data, please run the following command:
